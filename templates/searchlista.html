@@ -1,0 +1,266 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="renderer" content="webkit">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="generator" data-variable="/,cn,10001,,10001,res023"/>
+    <title>Lawpress内网系统</title>
+    {#    <link rel='stylesheet' href='./style/css/style.css'>#}
+    {% load static %}
+    <link rel='stylesheet' href='{% static 'style/css/style.css' %}'>
+     <style type="text/css">
+        .qimo8 {
+            overflow: hidden;
+        }
+
+        /*外层div,设置公告可见范围*/
+        .qimo8 .qimo { /*width:9999999999px;*/
+            width: 8000%;
+            height: 48px;
+        }
+
+        /*公告内容,给内容预留足够的空间宽度*/
+        .qimo8 .qimo div {
+            float: left;
+        }
+
+        /*包括demo1和demo2 让两个层合并为一排，也是无缝对接的关键*/
+        .qimo8 .qimo ul {
+            float: left;
+            height: 48px;
+            overflow: hidden;
+        }
+
+        .qimo8 .qimo ul li {
+            float: left;
+            line-height: 48px;
+            list-style: none;
+        }
+
+        .qimo8 li a {
+            margin-right: 10px;
+            color: #444;
+        }
+
+        .notice-title {
+            width: 150px;
+        }
+
+        /*.news-desc a:hover{color:#b22222;}
+        /* body .news-h a:link{color:inherit;text-decoration:none;}
+         body a:visited{color:inherit;} */
+        a:link {
+            text-decoration: none;
+            color: gray;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: blue;
+            font-size: 16px;
+        }
+    </style>
+    <!--meta http-equiv="refresh" content="0;url=http://www.baidu.com"-->
+</head>
+
+<body>
+<!--[if lte IE 8]>
+<div class="text-center padding-top-50 padding-bottom-50 bg-blue-grey-100">
+    <p class="browserupgrade font-size-18">你正在使用一个<strong>过时</strong>的浏览器。请<a href="" target="_blank">升级您的浏览器</a>，以提高您的体验。
+    </p>
+</div>
+<![endif]-->
+
+   <nav class="navbar navbar-default met-nav" role="navigation" style="background:url()no-repeat;background-size: cover;background-position:center;background-color:#f5f5f5;">
+        <!--header-->
+
+
+        <div class="navbar-header">
+            <div class="container dropup">
+                <button type="button" class="navbar-toggle hamburger hamburger-close collapsed" data-target="#navbar-default-collapse" data-toggle="collapse"> <span class="sr-only">Toggle navigation</span> <span class="hamburger-bar"></span> </button>
+                <a href="/" class="navbar-brand navbar-logo vertical-align" title=""><div class="vertical-align-middle"><img src="{% static 'style/images/logo.png' %}" alt="" title="" /></div></a>
+                <div class="met-langlist  margin-top-10 text-center top-site navbar-right">
+                     <div   class="head">
+                        <ul class="menu">
+                            <li class="lang"><h4><a href="http://www.lawpress.com.cn" target="_blank">>>门户网站</a></h4></li>
+                            <li class="lang"><h4><a href="http://www.moj.gov.cn/" target="_blank">司法部</a></h4></li>
+                            <li class="lang"><h4><a href="http://www.gov.cn/" target="_blank">中国政府网</a></h4></li>
+                            <li class="lang"><h4><a href="http://www.court.gov.cn/" target="_blank">最高人民法院</a></h4></li>
+
+
+                           <li class="lang"><h4><a href="http://search.chinalaw.gov.cn/search2.html" target="_blank">法律法规数据库</a></h4></li>
+                            <li class="lang"><h4><a href="{% static 'telephone.xls' %}" target="_blank">电话表</a></h4></li>
+                             <li class="lang"><h4><a href="http://129.0.13.79/admin/login">信息管理</a></h4></li>
+                    <div id="outer"><h4>国务院部门网站</h4>
+                           <ul class="menu" style="display:none;">
+                               <li class="lang"><h4><a href="https://www.fmprc.gov.cn/web/" target="_blank">外交部</a></h4></li>
+                               <li class="lang"><h4><a href="http://www.mod.gov.cn/" target="_blank">国防部</a></h4></li>
+                                <li class="lang"><h4><a href="http://www.spp.gov.cn/" target="_blank">最高人民检察院</a></h4></li>
+                               <li class="lang"><h4> <a target="_blank" href="http://www.ndrc.gov.cn/">国家发展和改革委员会</a></h4></li>
+                               <li class="lang"><h4><a target="_blank" href="http://www.moe.gov.cn/">教育部 </a></h4></li>
+                               <li class="lang"><h4> <a target="_blank" href="http://www.most.gov.cn/">科学技术部</a></h4></li>
+                               <li class="lang"><h4> <a target="_blank" href="http://www.miit.gov.cn/">工业和信息化部  </a></h4></li>
+                               <li class="lang"><h4> <a target="_blank" href="http://www.seac.gov.cn/">国家民族事务委员会 </a></h4></li>
+                               <li class="lang"><h4>  <a target="_blank" href="http://www.mps.gov.cn/">公安部 </a></h4></li>
+                               <li class="lang"><h4>  <a target="_blank" href="javascript:;">国家安全部 </a></h4></li>
+                               <li class="lang"><h4>  <a target="_blank" href="http://www.mca.gov.cn/">民政部</a></h4></li>
+                               <li class="lang"><h4>  <a target="_blank" href="http://www.moj.gov.cn/">司法部 </a></h4></li>
+                               <li class="lang"><h4> <a target="_blank" href="http://www.mof.gov.cn/index.htm">财政部 </a></h4></li>
+                               <li class="lang"><h4><a target="_blank" href="http://www.mohrss.gov.cn/">人力资源和社会保障部</a></h4></li>
+                               <li class="lang"><h4><a target="_blank" href="http://www.mnr.gov.cn/">自然资源部</a></h4></li>
+                               <li class="lang"><h4> <a target="_blank" href="http://www.mee.gov.cn/">生态环境部 </a></h4></li>
+                               <li class="lang"><h4><a target="_blank" href="http://www.mohurd.gov.cn/">住房和城乡建设部 </a></h4></li>
+                               <li class="lang"><h4><a target="_blank" href="http://www.mot.gov.cn/">交通运输部 </a></h4></li>
+                               <li class="lang"><h4><a target="_blank" href="http://www.mwr.gov.cn/">水利部</a></h4></li>
+                               <li class="lang"><h4><a target="_blank" href="http://www.moa.gov.cn/">农业农村部 </a></h4></li>
+                               <li class="lang"><h4> <a target="_blank" href="http://www.mofcom.gov.cn/">商务部 </a></h4></li>
+                               <li class="lang"><h4><a target="_blank" href="http://www.mct.gov.cn/">文化旅游部 </a></h4></li>
+                               <li class="lang"><h4><a target="_blank" href="http://www.nhc.gov.cn/">国家卫生健康委员会</a></h4></li>
+                               <li class="lang"><h4><a target="_blank" href="http://www.mva.gov.cn/">退役军人事务部</a></h4></li>
+                               <li class="lang"><h4><a target="_blank" href="https://www.mem.gov.cn/">应急管理部 </a></h4></li>
+                               <li class="lang"><h4><a target="_blank" href="http://www.pbc.gov.cn/">人民银行</a></h4></li>
+                               <li class="lang"><h4><a target="_blank" href="http://www.audit.gov.cn/">审计署 </a></h4></li>
+                               <li class="lang"><h4> <a target="_blank" href="http://www.moe.gov.cn/jyb_sy/China_Language/">国家语言文字工作委员会</a></h4></li>
+                               <li class="lang"><h4><a target="_blank" href="javascript:;">国家外国专家局</a></h4></li>
+                               <li class="lang"><h4> <a target="_blank" href="http://www.cnsa.gov.cn/">国家航天局</a></h4></li>
+                               <li class="lang"><h4> <a target="_blank" href="http://www.caea.gov.cn/">国家原子能机构 </a></h4></li>
+                               <li class="lang"><h4><a target="_blank" href="javascript:;">国家海洋局</a></h4></li>
+                               <li class="lang"><h4><a target="_blank" href="http://nnsa.mee.gov.cn/">国家核安全局 </a></h4></li>
+                               <li class="lang"><h4><a target="_blank" href="http://www.sasac.gov.cn/">国务院国有资产监督管理委员会</a></h4></li>
+                           </ul>
+                    </div>
+                       </ul>
+                    </div>
+
+                     <div class="home_search" >
+                                   <form name="searchall" action="/searchall/1" method="post">
+                        <div class="ss">
+                                <div class="inss"><select name="ss_select" class="ss_select"><option value="1" selected>全部栏目</option><option value="2">附件</option></select><input class="ss_txt" name="qt" value="" placeholder="请输入关键字" type="text" id="searchtxtId"><input id="searchbtnId"  class="ss_btn" value="搜索" type="submit" ></div>
+                        </div>
+                             </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--end header-->
+
+    <!--menu-->
+    <div class="collapse navbar-collapse navbar-collapse-toolbar" id="navbar-default-collapse">
+
+        <div class="container">
+            <ul class="nav navbar-nav navlist">
+                {% for category in category_list %}
+                    <li class="#(category.isActive ? 'nav0' : '')">
+                        <a href="/artlist/1/{{ category.id }}/{{ category.id }}">{{ category.title }}</a></li>
+                {% endfor %}
+                <!--a href="#(category.url ??)">#(category.title ??)</a></li-->
+
+                <!--<li> <a href="/attach/search">表格下载</a></li>
+                  <li class="nav0"><a href="list.html">社务行政</a></li>
+                  <li><a href="">党务工作</a></li>
+                  <li><a href="">纪委工作</a></li>
+                  <li><a href="">编辑业务</a></li>
+                  <li><a href="">市场营销</a></li>
+                  <li><a href="">人力资源</a></li>
+                  <li><a href="">财务管理</a></li>
+                  <li><a href="">通 知</a></li>
+                  <li><a href="">社情动态</a></li>
+                  <li><a href="">共青团</a></li>
+                  <li><a href="">工 会</a></li>
+                  <li><a href="">企业文化</a></li>
+                  <li><a href="">《法律人》</a></li>-->
+            </ul>
+
+
+        </div>
+    </div>
+    <!--end menu-->
+</nav>
+
+<!--banner-->
+<section class="derived-banner">
+    <div class="container">
+        <div class="met-banner   banner-ny-h" data-height='' style=''>
+            <div class="slick-slide"><a href="http://129.0.12.40/article/3620" target="_blank"> <img class="cover-image"
+                                                                                                     src="{% static 'style/images/20200720.jpg' %}"
+                                                                                                     sizes="(max-width: 767px) 767px">
+            </div>
+        </div>
+    </div>
+</section>
+<!--end banner-->
+
+<section class="met-shownews animsition">
+    <div class="container">
+
+{#        {% for category1 in category1_list %}#}
+{#            <div class="myshowmenu">#}
+{##}
+{#                <div class="myshowmenudiv1 onbg"><a href="javascript:void(0)">{{ category1.title }}</a></div>#}
+{##}
+{#                {% for submenu in category2_list %}#}
+{#                    {% if category1.id == submenu.pid %}#}
+{#                        <div class="myshowmenudiv #(c.id==q.id ? 'onbg1' : '') "><a#}
+{#                                href="/artlist/{{ category1.id }}/{{ submenu.id }}">{{ submenu.title }}</a></div>#}
+                        {#     {% for threemenu in threecategory_list %}#}
+                        {#                            {% if submenu.id == threemenu.pid %}#}
+                        {#                                 <div class="myshowmenudiv #(c.id==q.id ? 'onbg1' : '') "><a href="#(c.url ??)">{{threemenu.title}}</a></div>#}
+                        {#                                {% endif %}#}
+                        {#    {% endfor %}#}
+{##}
+{#                    {% endif %}#}
+{#                {% endfor %}#}
+{##}
+{#                <!--div class="myshowmenudiv onbg1"><a  href="">党委成员</a></div-->#}
+{##}
+{##}
+{#                <div class="clearfix"></div>#}
+{#            </div>#}
+{#        {% endfor %}#}
+
+
+
+        <div class="row">
+            <div class="col-md-12 met-shownews-body" style="margin: 0px;padding:0px;">
+                <div class="row">
+                    {% for new in new_list %}
+                        <div class="met-shownews-header">
+                            <h1>{{ new.title }}</h1>
+                            <div class="info"><span>{{ new.created }}</span> <span>{{ new.title }}</span></div>
+                        </div>
+                        <div class="met-editor  clearfix">
+                            <div style="text-align: justify;">
+                                {% autoescape off %}{{ new.content }}{% endautoescape %}
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+<button type="button" class="btn btn-icon btn-primary btn-squared met-scroll-top hide"><i class="icon wb-chevron-up"
+                                                                                          aria-hidden="true"></i>
+</button>
+{#    <script src="./style/js/js.js"></script>#}
+<script src="{% static '/style/js/js.js' %}"></script>
+<script src="{% static '/style/js/bootstrap.js' %}"></script>
+<script type="text/javascript">
+    function menu() {//声明函数
+        var outer = document.getElementById("outer");//定义“outer”等于外围容器第 页 ，共 页
+        outer.onmouseover = function () {//当outer鼠标移入时候执行：
+            this.getElementsByTagName("ul")[0].style.display = "block";//this指outer本身；它下面的ul的样式display=block，也就是显示；
+        }
+        outer.onmouseout = function () {//当outer鼠标移出时候执行：
+            this.getElementsByTagName("ul")[0].style.display = "none";//this指outer本身；它下面的ul的样式display=none，也就是隐藏；
+        }
+    }
+
+    menu();//执行函数
+</script>
+</body>
+</html>
